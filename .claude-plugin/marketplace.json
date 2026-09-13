@@ -4,23 +4,13 @@
   "plugins": [
     {
       "name": "commit-commands",
-      "description": "E2E 用。公式リポの plugins/commit-commands を参照",
-      "source": {
-        "source": "git-subdir",
-        "url": "https://github.com/anthropics/claude-code.git",
-        "path": "plugins/commit-commands",
-        "sha": "e46ab548ab3ffc5f75309a3f36016fb418c730ca"
-      }
+      "description": "E2E 用。公式リポ anthropics/claude-code の plugins/commit-commands を vendoring（sha e46ab548ab3ffc5f75309a3f36016fb418c730ca）",
+      "source": "./plugins/commit-commands"
     },
     {
       "name": "pr-review-toolkit",
-      "description": "prelaunch E2E 用。公式リポの plugins/pr-review-toolkit を参照",
-      "source": {
-        "source": "git-subdir",
-        "url": "https://github.com/anthropics/claude-code.git",
-        "path": "plugins/pr-review-toolkit",
-        "sha": "e46ab548ab3ffc5f75309a3f36016fb418c730ca"
-      }
+      "description": "prelaunch E2E 用。公式リポ anthropics/claude-code の plugins/pr-review-toolkit を vendoring（sha e46ab548ab3ffc5f75309a3f36016fb418c730ca）",
+      "source": "./plugins/pr-review-toolkit"
     },
     {
       "name": "devrelay-hello",
@@ -29,34 +19,31 @@
     },
     {
       "name": "context7",
-      "description": "公式: Context7 リモート MCP（最新ドキュメント参照）",
-      "source": {
-        "source": "git-subdir",
-        "url": "https://github.com/anthropics/claude-plugins-official.git",
-        "path": "external_plugins/context7",
-        "sha": "3deb821cb71ccfaaf2ffa9935e977df314ce5cd5"
-      }
+      "description": "公式: Context7 リモート MCP（最新ドキュメント参照）。anthropics/claude-plugins-official の external_plugins/context7 を vendoring（sha 3deb821cb71ccfaaf2ffa9935e977df314ce5cd5）",
+      "source": "./plugins/context7"
     },
     {
       "name": "typescript-lsp",
-      "description": "公式: TypeScript/JavaScript 言語サーバ連携（要 typescript-language-server）",
-      "source": {
-        "source": "git-subdir",
-        "url": "https://github.com/anthropics/claude-plugins-official.git",
-        "path": "plugins/typescript-lsp",
-        "sha": "3deb821cb71ccfaaf2ffa9935e977df314ce5cd5"
+      "description": "公式: TypeScript/JavaScript 言語サーバ連携（要 typescript-language-server）。anthropics/claude-plugins-official の marketplace.json 内 typescript-lsp エントリを vendoring（sha 3deb821cb71ccfaaf2ffa9935e977df314ce5cd5）",
+      "source": "./plugins/typescript-lsp",
+      "strict": false,
+      "lspServers": {
+        "typescript": {
+          "command": "typescript-language-server",
+          "args": ["--stdio"],
+          "extensionToLanguage": {
+            ".ts": "typescript",
+            ".tsx": "typescriptreact",
+            ".js": "javascript",
+            ".jsx": "javascriptreact",
+            ".mts": "typescript",
+            ".cts": "typescript",
+            ".mjs": "javascript",
+            ".cjs": "javascript"
+          }
+        }
       }
-    },
-    {
-      "name": "security-guidance",
-      "description": "公式: 編集時の脆弱性パターン警告 + Stop 時 diff レビュー",
-      "source": {
-        "source": "git-subdir",
-        "url": "https://github.com/anthropics/claude-plugins-official.git",
-        "path": "plugins/security-guidance",
-        "sha": "3deb821cb71ccfaaf2ffa9935e977df314ce5cd5"
-      }
-    }    
+    }
   ]
 }
 

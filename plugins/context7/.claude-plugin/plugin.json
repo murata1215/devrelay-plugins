@@ -1,0 +1,8 @@
+{
+  "name": "context7",
+  "description": "Upstash Context7 MCP server for up-to-date documentation lookup. Connects to Context7's hosted remote MCP server (https://mcp.context7.com/mcp) — no local Node.js or npx required — to pull version-specific documentation and code examples directly from source repositories into your LLM context. Works anonymously out of the box; set CONTEXT7_API_KEY for higher rate limits. （取り込み元: anthropics/claude-plugins-official external_plugins/context7 @3deb821cb71ccfaaf2ffa9935e977df314ce5cd5）",
+  "version": "1.0.0",
+  "author": {
+    "name": "Upstash"
+  }
+}
