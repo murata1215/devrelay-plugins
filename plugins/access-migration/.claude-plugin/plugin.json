@@ -1,0 +1,6 @@
+{
+  "name": "access-migration",
+  "description": "Access（.accdb/.mdb）業務システムを他言語（第一目標 C#）へ移植する前工程を支援。MSAccess VCS Add-in の export（format 5.0）の読み方と C# 移植規約の skill を提供",
+  "version": "0.1.0",
+  "author": { "name": "Keisuke Murata" }
+}

@@ -43,6 +43,11 @@
           }
         }
       }
+    },
+    {
+      "name": "access-migration",
+      "description": "Access 業務システムの他言語移植を支援。MSAccess VCS Add-in の export（format 5.0）の読み方と C# 移植規約の skill を提供",
+      "source": "./plugins/access-migration"
     }
   ]
 }
