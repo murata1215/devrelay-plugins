@@ -21,7 +21,12 @@
         "path": "plugins/pr-review-toolkit",
         "sha": "e46ab548ab3ffc5f75309a3f36016fb418c730ca"
       }
-    }
+    },
+    {
+      "name": "devrelay-hello",
+      "description": "E2E-C 用の社内プラグイン",
+      "source": "./plugins/devrelay-hello"
+    }    
   ]
 }
 
