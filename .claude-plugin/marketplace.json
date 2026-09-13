@@ -26,6 +26,36 @@
       "name": "devrelay-hello",
       "description": "E2E-C 用の社内プラグイン",
       "source": "./plugins/devrelay-hello"
+    },
+    {
+      "name": "context7",
+      "description": "公式: Context7 リモート MCP（最新ドキュメント参照）",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/claude-plugins-official.git",
+        "path": "external_plugins/context7",
+        "sha": "3deb821cb71ccfaaf2ffa9935e977df314ce5cd5"
+      }
+    },
+    {
+      "name": "typescript-lsp",
+      "description": "公式: TypeScript/JavaScript 言語サーバ連携（要 typescript-language-server）",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/claude-plugins-official.git",
+        "path": "plugins/typescript-lsp",
+        "sha": "3deb821cb71ccfaaf2ffa9935e977df314ce5cd5"
+      }
+    },
+    {
+      "name": "security-guidance",
+      "description": "公式: 編集時の脆弱性パターン警告 + Stop 時 diff レビュー",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/claude-plugins-official.git",
+        "path": "plugins/security-guidance",
+        "sha": "3deb821cb71ccfaaf2ffa9935e977df314ce5cd5"
+      }
     }    
   ]
 }
