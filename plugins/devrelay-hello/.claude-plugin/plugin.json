@@ -1,6 +1,6 @@
 {
   "name": "devrelay-hello",
   "description": "E2E-C 用の社内プラグイン",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": { "name": "Keisuke Murata" }
 }
