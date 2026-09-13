@@ -11,6 +11,17 @@
         "path": "plugins/commit-commands",
         "sha": "e46ab548ab3ffc5f75309a3f36016fb418c730ca"
       }
+    },
+    {
+      "name": "pr-review-toolkit",
+      "description": "prelaunch E2E 用。公式リポの plugins/pr-review-toolkit を参照",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/claude-code.git",
+        "path": "plugins/pr-review-toolkit",
+        "sha": "e46ab548ab3ffc5f75309a3f36016fb418c730ca"
+      }
     }
   ]
 }
+
