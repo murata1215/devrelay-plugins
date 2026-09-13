@@ -1,0 +1,16 @@
+{
+  "name": "devrelay",
+  "owner": { "name": "Keisuke Murata" },
+  "plugins": [
+    {
+      "name": "commit-commands",
+      "description": "E2E 用。公式リポの plugins/commit-commands を参照",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/claude-code.git",
+        "path": "plugins/commit-commands",
+        "sha": "e46ab548ab3ffc5f75309a3f36016fb418c730ca"
+      }
+    }
+  ]
+}
